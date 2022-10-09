@@ -1,0 +1,180 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+
+
+    
+    
+{% block content %}
+    
+    <div class="container">
+        <nav class="mt-5 mb-5" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Cart</li>
+            </ol>
+          </nav>
+          <div class="row">
+
+            <!-- Tablo -->
+            <table class="mt-5 mb-5">
+                    <tr class="topmnu">
+                        <td class="itmtd">Item</td>
+                        <td class="description"></td>
+                        <td class="price">Price</td>
+                        <td class="quantity">Quantity</td>
+                        <td class="total">Total</td>
+                        <td class="close"></td>
+                    </tr>
+            
+
+                    <tr>
+                        <td class="item">
+                            <a href=""><img src="images/cart/one.png" alt=""></a>
+                        </td>
+                        <td class="itemDescription">
+                            <h4><a href="">Colorblock Scuba</a></h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="itemPrice">
+                            <p class="itemPriceAll">$59</p>
+                        </td>
+                        <td class="itemQuantity">
+                            <div class="itemButtons">
+                                <a class="itemUp" href=""> + </a>
+                                <input class="itemCount" type="text" name="quantity" value="1" autocomplete="off" size="1">
+                                <a class="itemDown" href=""> - </a>
+                            </div>
+                        </td>
+                        <td class="itemTotal">
+                            <p>$59</p>
+                        </td>
+                        <td class="itemClose">
+                            <a class="itemDelete" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <a href=""><img src="images/cart/two.png" alt=""></a>
+                        </td>
+                        <td class="itemDescription">
+                            <h4><a href="">Colorblock Scuba</a></h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="itemPrice">
+                            <p class="itemPriceAll">$59</p>
+                        </td>
+                        <td class="itemQuantity">
+                            <div class="itemButtons">
+                                <a class="itemUp" href=""> + </a>
+                                <input class="itemCount" type="text" name="quantity" value="1" autocomplete="off" size="1">
+                                <a class="itemDown" href=""> - </a>
+                            </div>
+                        </td>
+                        <td class="itemTotal">
+                            <p>$59</p>
+                        </td>
+                        <td class="itemClose">
+                            <a class="itemDelete" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="item">
+                            <a href=""><img src="images/cart/three.png" alt=""></a>
+                        </td>
+                        <td class="itemDescription">
+                            <h4><a href="">Colorblock Scuba</a></h4>
+                            <p>Web ID: 1089772</p>
+                        </td>
+                        <td class="itemPrice">
+                            <p class="itemPriceAll">$59</p>
+                        </td>
+                        <td class="itemQuantity">
+                            <div class="itemButtons">
+                                <a class="itemUp" href=""> + </a>
+                                <input class="itemCount" type="text" name="quantity" value="1" autocomplete="off" size="1">
+                                <a class="itemDown" href=""> - </a>
+                            </div>
+                        </td>
+                        <td class="itemTotal">
+                            <p>$59</p>
+                        </td>
+                        <td class="itemClose">
+                            <a class="itemDelete" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+            </table>
+          </div>
+
+
+
+          <div class="row cartfnsh d-flex justify-content-between">
+            <h3>What would you like to do next?</h3>
+            <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+            <div class="col-sm-5">
+                <div class="row shopbox lh-5">
+                    <div class="col-sm-12">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Use Coupon Code</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Use Gift Voucher</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Estimate Shipping & Taxes</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="d-block" for="">Country:</label>
+                        <select name="" id="">
+                            <option value="">United States</option>
+                            <option value="">Turkey</option>
+                            <option value="">Canada</option>
+                            <option value="">Russia</option>
+                            <option value="">Italy</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <label class="d-block" for="">Region:</label>
+                        <select name="" id="">
+                            <option value="">Turkey</option>
+                            <option value="">Select</option>
+                            <option value="">Canada</option>
+                            <option value="">Russia</option>
+                            <option value="">Italy</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="" class="d-block">Zip Code</label>
+                        <input class="w-75" type="text" placeholder="">
+                    </div>
+                    <div class="col-sm-12">
+                        <button>Get Quotes</button>
+                        <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="row shopbox">
+                    <div class="col-sm-12">
+                        <ul class="bxx2">
+                            <li>Cart Sub Total <span>$59</span></li>
+                            <li>Eco Tax <span>$2</span></li>
+                            <li>Shipping Cost <span>Free</span></li>
+                            <li>Total <span>$61</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12">
+                        <button>Update</button>
+                        <button>Check Out</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    
+{% endblock content %} 
+
+

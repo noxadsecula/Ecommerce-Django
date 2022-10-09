@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+ {% load static %}
+
+ 
+{% block content %}
+<div class="row m-auto">
+  <form action="" method="POST" class="form-control border-0">
+    {% csrf_token %}
+    <h2 class="hdh2">New User Signup!</h2>
+    <div class="col-sm-6">
+      <input
+        class="w-100 form-control"
+        type="text"
+        placeholder="Name"
+        name="username"
+      />
+    </div>
+    <div class="col-sm-6">
+      <input
+        class="mt-2 w-100 form-control"
+        type="email"
+        placeholder="E-Mail"
+        name="email"
+      />
+    </div>
+    <div class="col-sm-6">
+      <input
+        class="mt-2 w-100 form-control"
+        type="password"
+        placeholder="Password"
+        name="passwordReg1"
+      />
+    </div>
+    <div class="col-sm-6">
+      <input
+        class="mt-2 w-100 form-control"
+        type="password"
+        placeholder="Password"
+        name="passwordReg2"
+      />
+    </div>
+    <div class="col-sm-6">
+      <button class="mt-2" type="submit" value="signup" name="submit">
+        Signup
+      </button>
+    </div>
+  </form>
+</div>
+
+{% endblock content %}

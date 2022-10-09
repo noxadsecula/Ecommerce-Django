@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% load static%}
+
+{% block content %}
+    <div class="container loginf">
+        <div class="row justify-content-evenly">
+            <div class="col-sm-4">
+                <div class="row">
+                <form action=""  method="POST" class="form-control border-0">
+                  {% csrf_token %}
+                    <h2 class="hdh2">Login to your account</h2>
+                    <div class="col-sm-12">
+                        <input class="w-100 form-control" type="text" placeholder="Name or Email" name="username" >
+                    </div>
+                    <div class="col-sm-12">
+                      <input
+                        class="mt-2 w-100 form-control" type="password" placeholder="Password" name="password"
+                      />
+                    </div>
+                    <div class="col-sm-12 d-flex mt-1">
+                        <input type="checkbox">
+                        <p class="m-2 p-0 ms-2">Keep me signed in</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <button class="mt-3" type="submit" value="signin" name="submit">Login</button>
+                    </div>
+                    
+                </form>
+                </div>
+            </div>
+            <div class="col-sm-1">
+                <div class="row h-100 d-flex justify-content-center align-items-center">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="h2or">OR</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                  <a href="{% url 'register' %}" class="text-decoration-none fw-bold align-content-center m-auto text-center">Register here</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock content %}
+
